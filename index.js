@@ -80,7 +80,6 @@ module.exports = new Proxy(config, {
 	}
 });
 
-// Try and bootstrap
 if (process.env.leo_config_bootstrap_path) {
 	try {
 		module.exports.bootstrap(require(process.env.leo_config_bootstrap_path));
